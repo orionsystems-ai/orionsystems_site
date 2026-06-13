@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orion Systems - Automatisations IA sur-mesure pour TPE/PME</title>
+    <meta name="description" content="Diagnostic gratuit et automatisations sur-mesure pour gagner du temps au quotidien : emails, relances, devis, factures. Intégration dans vos outils existants.">
+    <link rel="icon" type="image/png" href="images/1060dfea-16ac-40fa-a84b-886052c9bbb0.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#accueil" class="nav__brand">ORION<span>SYSTEMS</span></a>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__list" id="nav-list">
+                <li><a href="#approche" class="nav__link">Notre approche</a></li>
+                <li><a href="#comment" class="nav__link">Fonctionnement</a></li>
+                <li><a href="#exemples" class="nav__link">Exemples</a></li>
+                <li><a href="#faq" class="nav__link">FAQ</a></li>
+            </ul>
+            <a href="#contact" class="nav__cta">Nous contacter</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="accueil">
+            <div class="hero__bg">
+                <video class="hero__video" autoplay muted loop playsinline>
+                    <source src="images/video.mp4" type="video/mp4">
+                </video>
+                <div class="hero__orb hero__orb--1"></div>
+                <div class="hero__orb hero__orb--2"></div>
+                <div class="hero__orb hero__orb--3"></div>
+                <div class="hero__particles" id="particles"></div>
+            </div>
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span class="hero__title-line reveal-up" style="--delay: 0.1s">Construisez votre avenir,</span>
+                    <span class="hero__title-line hero__title-accent reveal-up" style="--delay: 0.2s">grâce aux systèmes</span>
+                    <span class="hero__title-line hero__title-accent reveal-up" style="--delay: 0.3s">de demain</span>
+                </h1>
+                <p class="hero__text reveal-up" style="--delay: 0.4s">Vous perdez des heures chaque semaine sur des tâches répétitives. Nous identifions ce qui vous ralentit et construisons une solution simple, sur-mesure, qui s'intègre dans vos habitudes.</p>
+                <div class="hero__actions reveal-up" style="--delay: 0.5s">
+                    <a href="#contact" class="btn btn--primary">
+                        <span>Discutons de votre projet</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m0 0l-6-6m6 6l-6 6"/></svg>
+                    </a>
+                    <a href="#comment" class="btn btn--ghost">Voir le fonctionnement</a>
+                </div>
+                <div class="hero__stats reveal-up" style="--delay: 0.6s">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="48">0</span><span class="hero__stat-suffix">h</span>
+                        <span class="hero__stat-label">Prototype prêt</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="0">0</span><span class="hero__stat-suffix">€</span>
+                        <span class="hero__stat-label">Premier échange</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="100">0</span><span class="hero__stat-suffix">%</span>
+                        <span class="hero__stat-label">Sur-mesure</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="marquee">
+            <div class="marquee__track">
+                <div class="marquee__group">
+                    <span>Automatisation</span><span class="marquee__dot"></span>
+                    <span>Intelligence Artificielle</span><span class="marquee__dot"></span>
+                    <span>Sur-mesure</span><span class="marquee__dot"></span>
+                    <span>TPE / PME</span><span class="marquee__dot"></span>
+                    <span>Gain de temps</span><span class="marquee__dot"></span>
+                    <span>ROI rapide</span><span class="marquee__dot"></span>
+                </div>
+                <div class="marquee__group" aria-hidden="true">
+                    <span>Automatisation</span><span class="marquee__dot"></span>
+                    <span>Intelligence Artificielle</span><span class="marquee__dot"></span>
+                    <span>Sur-mesure</span><span class="marquee__dot"></span>
+                    <span>TPE / PME</span><span class="marquee__dot"></span>
+                    <span>Gain de temps</span><span class="marquee__dot"></span>
+                    <span>ROI rapide</span><span class="marquee__dot"></span>
+                </div>
+                <div class="marquee__group" aria-hidden="true">
+                    <span>Automatisation</span><span class="marquee__dot"></span>
+                    <span>Intelligence Artificielle</span><span class="marquee__dot"></span>
+                    <span>Sur-mesure</span><span class="marquee__dot"></span>
+                    <span>TPE / PME</span><span class="marquee__dot"></span>
+                    <span>Gain de temps</span><span class="marquee__dot"></span>
+                    <span>ROI rapide</span><span class="marquee__dot"></span>
+                </div>
+                <div class="marquee__group" aria-hidden="true">
+                    <span>Automatisation</span><span class="marquee__dot"></span>
+                    <span>Intelligence Artificielle</span><span class="marquee__dot"></span>
+                    <span>Sur-mesure</span><span class="marquee__dot"></span>
+                    <span>TPE / PME</span><span class="marquee__dot"></span>
+                    <span>Gain de temps</span><span class="marquee__dot"></span>
+                    <span>ROI rapide</span><span class="marquee__dot"></span>
+                </div>
+            </div>
+        </div>
+
+        <section class="section section--light" id="approche">
+            <div class="container">
+                <div class="split">
+                    <div class="split__left">
+                        <span class="section__label reveal-up">Notre approche</span>
+                        <h2 class="section__title reveal-up">On ne vous propose pas une solution toute faite.<br><span class="text-accent">On diagnostique.</span></h2>
+                    </div>
+                    <div class="split__right reveal-up">
+                        <p class="lead">Chaque entreprise a son propre fonctionnement, ses propres outils, ses propres habitudes.</p>
+                        <p>Avant toute chose, on prend le temps de comprendre où vous perdez du temps au quotidien : qu'est-ce qui revient sans cesse, qu'est-ce qui est mécanique, qu'est-ce qui pourrait être plus simple.</p>
+                        <p>Une fois le problème identifié clairement, on construit une solution adaptée à votre fonctionnement actuel.</p>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section class="section section--dark" id="comment">
+            <div class="container">
+                <div class="section__header-center">
+                    <span class="section__label reveal-up">Le fonctionnement</span>
+                    <h2 class="section__title reveal-up">Trois étapes. <span class="text-accent">C'est tout.</span></h2>
+                </div>
+                <div class="flow" id="flow-section">
+                    <div class="flow__grid">
+                        <div class="flow__step reveal-up" data-step="0">
+                            <div class="flow__card">
+                                <div class="flow__number"><span>01</span></div>
+                                <div class="flow__card-top">
+                                    <span class="flow__badge">On discute</span>
+                                </div>
+                                <div class="flow__icon">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/><path d="M8 10h8"/><path d="M8 14h5"/></svg>
+                                </div>
+                                <h3 class="flow__title">20-30 min</h3>
+                                <p class="flow__text">Nous prenons le temps de découvrir votre fonctionnement, d’identifier ce qui vous coûte du temps et de l’argent, et de repérer les actions qui pourraient être automatisées pour améliorer votre efficacité au quotidien.</p>
+                            </div>
+                        </div>
+                        <div class="flow__connector" data-connector="0">
+                            <svg class="flow__connector-svg" viewBox="0 0 100 60" fill="none" preserveAspectRatio="none">
+                                <path class="flow__path-bg" d="M 0 30 C 30 30, 70 30, 100 30" stroke="rgba(255,255,255,0.06)" stroke-width="2" stroke-linecap="round"/>
+                                <path class="flow__path-main" d="M 0 30 C 30 30, 70 30, 100 30" stroke="url(#flowGradient0)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 4"/>
+                                <circle class="flow__particle flow__particle--1" cx="0" cy="30" r="3" fill="url(#particleGlow0)"/>
+                                <circle class="flow__particle flow__particle--2" cx="0" cy="30" r="2" fill="rgba(245,166,35,0.6)"/>
+                                <circle class="flow__particle flow__particle--3" cx="0" cy="30" r="1.5" fill="rgba(251,191,36,0.4)"/>
+                                <defs>
+                                    <linearGradient id="flowGradient0" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="rgba(245,166,35,0.8)"/>
+                                        <stop offset="50%" stop-color="rgba(251,191,36,1)"/>
+                                        <stop offset="100%" stop-color="rgba(245,166,35,0.4)"/>
+                                    </linearGradient>
+                                    <radialGradient id="particleGlow0">
+                                        <stop offset="0%" stop-color="rgba(251,191,36,1)"/>
+                                        <stop offset="60%" stop-color="rgba(245,166,35,0.6)"/>
+                                        <stop offset="100%" stop-color="rgba(245,166,35,0)"/>
+                                    </radialGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="flow__step reveal-up" data-step="1">
+                            <div class="flow__card">
+                                <div class="flow__number"><span>02</span></div>
+                                <div class="flow__card-top">
+                                    <span class="flow__badge">On vous montre</span>
+                                </div>
+                                <div class="flow__icon">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M9 18v-2c0-1-.5-1.8-1.5-2.5a5 5 0 1 1 9 0c-1 .7-1.5 1.5-1.5 2.5v2"/><path d="M12 2v2"/><path d="M4.9 4.9l1.4 1.4"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M17.7 6.3l1.4-1.4"/></svg>
+                                </div>
+                                <h3 class="flow__title">Sous 48h</h3>
+                                <p class="flow__text">Nous réalisons un prototype pour vous montrer concrètement comment la solution fonctionne. Vous pouvez ainsi visualiser l'efficacité de la solution avant de vous engager.</p>
+                            </div>
+                        </div>
+                        <div class="flow__connector" data-connector="1">
+                            <svg class="flow__connector-svg" viewBox="0 0 100 60" fill="none" preserveAspectRatio="none">
+                                <path class="flow__path-bg" d="M 0 30 C 30 30, 70 30, 100 30" stroke="rgba(255,255,255,0.06)" stroke-width="2" stroke-linecap="round"/>
+                                <path class="flow__path-main" d="M 0 30 C 30 30, 70 30, 100 30" stroke="url(#flowGradient1)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 4"/>
+                                <circle class="flow__particle flow__particle--1" cx="0" cy="30" r="3" fill="url(#particleGlow1)"/>
+                                <circle class="flow__particle flow__particle--2" cx="0" cy="30" r="2" fill="rgba(245,166,35,0.6)"/>
+                                <circle class="flow__particle flow__particle--3" cx="0" cy="30" r="1.5" fill="rgba(251,191,36,0.4)"/>
+                                <defs>
+                                    <linearGradient id="flowGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="rgba(245,166,35,0.8)"/>
+                                        <stop offset="50%" stop-color="rgba(251,191,36,1)"/>
+                                        <stop offset="100%" stop-color="rgba(245,166,35,0.4)"/>
+                                    </linearGradient>
+                                    <radialGradient id="particleGlow1">
+                                        <stop offset="0%" stop-color="rgba(251,191,36,1)"/>
+                                        <stop offset="60%" stop-color="rgba(245,166,35,0.6)"/>
+                                        <stop offset="100%" stop-color="rgba(245,166,35,0)"/>
+                                    </radialGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="flow__step reveal-up" data-step="2">
+                            <div class="flow__card">
+                                <div class="flow__number"><span>03</span></div>
+                                <div class="flow__card-top">
+                                    <span class="flow__badge">On construit</span>
+                                </div>
+                                <div class="flow__icon">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 4 6v6c0 5 3.4 8.8 8 10 4.6-1.2 8-5 8-10V6z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg>
+                                </div>
+                                <h3 class="flow__title">Votre solution</h3>
+                                <p class="flow__text">C’est l’automatisation que l’on construit pour vous : fiable, intuitive, et intégrée à vos outils existants - Excel, Google Sheets, votre boîte mail ou votre CRM.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--light" id="pourquoi">
+            <div class="container">
+                <div class="section__header-center">
+                    <span class="section__label reveal-up">Nos engagements</span>
+                    <h2 class="section__title reveal-up">Nous faisons gagner du temps et de <span class="text-accent">l'argent aux patrons de TPE/PME</span></h2>
+                </div>
+                <div class="bento">
+                    <div class="bento__item bento__item--wide reveal-up">
+                        <div class="bento__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="bento__title">On s'adapte à vous, pas l'inverse</h3>
+                        <p class="bento__text">Vous utilisez Excel ? On reste sur Excel. Vous avez déjà un CRM ? On travaille avec. On ne vous impose rien, on construit avec ce que vous avez déjà.</p>
+                    </div>
+                    <div class="bento__item reveal-up">
+                        <div class="bento__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <h3 class="bento__title">Simple et solide</h3>
+                        <p class="bento__text">Une solution ciblée, qui fait exactement ce dont vous avez besoin. Ni plus, ni moins.</p>
+                    </div>
+                    <div class="bento__item reveal-up">
+                        <div class="bento__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        </div>
+                        <h3 class="bento__title">Vos données sont sécurisées</h3>
+                        <p class="bento__text">Hébergement sécurisé, aucune donnée partagée avec des tiers.</p>
+                    </div>
+                    <div class="bento__item bento__item--wide reveal-up">
+                        <div class="bento__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                        <h3 class="bento__title">Un humain en face de vous</h3>
+                        <p class="bento__text">On reste joignable, on s'adapte avec vous au fil du temps, et un humain garde toujours la main sur les décisions importantes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--dark" id="exemples">
+            <div class="container">
+                <div class="section__header-center">
+                    <span class="section__label reveal-up">Cas d'usage</span>
+                    <h2 class="section__title reveal-up">Ce qu'on peut <span class="text-accent">automatiser pour vous</span></h2>
+                </div>
+                <div class="cases">
+                    <div class="case tilt-card reveal-up">
+                        <div class="case__number">01</div>
+                        <div class="case__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6"/><path d="M23 11h-6"/></svg>
+                        </div>
+                        <h3 class="case__title">Recherche et qualification des prospects</h3>
+                        <p class="case__text">Trie et qualification de vos prospects en temps réel pour vous faire gagner du temps et augmenter votre taux de conversion.</p>
+                        <span class="case__tag">Acquisition</span>
+                    </div>
+                    <div class="case tilt-card reveal-up">
+                        <div class="case__number">02</div>
+                        <div class="case__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        </div>
+                        <h3 class="case__title">Relance automatique</h3>
+                        <p class="case__text">Vos prospects inactifs reçoivent des messages de relance personnalisés et pertinents, générés automatiquement. Plus de conversions sans effort.</p>
+                        <span class="case__tag">Commercial</span>
+                    </div>
+                    <div class="case tilt-card reveal-up">
+                        <div class="case__number">03</div>
+                        <div class="case__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <h3 class="case__title">Tri intelligent des emails</h3>
+                        <p class="case__text">Vos emails sont classés par priorité avec une réponse suggérée prête à l'envoi. Une boîte de réception toujours organisée.</p>
+                        <span class="case__tag">Productivité</span>
+                    </div>
+                    <div class="case tilt-card reveal-up">
+                        <div class="case__number">04</div>
+                        <div class="case__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <h3 class="case__title">Saisie de données automatisée</h3>
+                        <p class="case__text">Les informations reçues par email, formulaire ou document sont automatiquement intégrées dans votre CRM, ERP ou tableur.</p>
+                        <span class="case__tag">Productivité</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--light" id="faq">
+            <div class="container container--narrow">
+                <div class="section__header-center">
+                    <span class="section__label reveal-up">Questions fréquentes</span>
+                    <h2 class="section__title reveal-up">Tout ce que vous <span class="text-accent">devez savoir</span></h2>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__item reveal-up">
+                        <button class="accordion__trigger" aria-expanded="false">
+                            <span>Quels types d'entreprises peuvent bénéficier de vos solutions ?</span>
+                            <div class="accordion__icon"></div>
+                        </button>
+                        <div class="accordion__content">
+                            <p>Nous travaillons principalement avec des TPE et PME - artisans, commerces, cabinets, agences, indépendants. Quelle que soit votre taille ou votre secteur, si vous avez des tâches répétitives au quotidien, il y a probablement une solution simple à mettre en place.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item reveal-up">
+                        <button class="accordion__trigger" aria-expanded="false">
+                            <span>Quel est l’impact de l’IA sur la productivité des entreprises ?</span>
+                            <div class="accordion__icon"></div>
+                        </button>
+                        <div class="accordion__content">
+                            <p>L’intelligence artificielle transforme profondément la manière dont les entreprises travaillent. En automatisant les tâches répétitives, en accélérant l’analyse de données et en aidant à la prise de décision, elle permet aux équipes de gagner en efficacité et de se concentrer sur des missions à plus forte valeur ajoutée.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item reveal-up">
+                        <button class="accordion__trigger" aria-expanded="false">
+                            <span>Mais concrètement, quels résultats observe-t-on aujourd’hui dans les entreprises qui ont déjà adopté l’IA ?</span>
+                            <div class="accordion__icon"></div>
+                        </button>
+                        <div class="accordion__content">
+                            <p>Selon une étude de <a href="https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/The-economic-potential-of-generative-AI-The-next-productivity-frontier" target="_blank" rel="noopener" style="text-decoration: underline; color: var(--gold);">McKinsey & Company</a>, l'IA générative pourrait automatiser 60 à 70 % du temps de travail actuel sur certaines fonctions, notamment administratives, commerciales et support.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item reveal-up">
+                        <button class="accordion__trigger" aria-expanded="false">
+                            <span>Et si je veux garder le contrôle sur certaines réponses ?</span>
+                            <div class="accordion__icon"></div>
+                        </button>
+                        <div class="accordion__content">
+                            <p>C'est même recommandé. La plupart de nos automatisations laissent une étape de validation humaine — vous gardez la main.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item reveal-up">
+                        <button class="accordion__trigger" aria-expanded="false">
+                            <span>Combien de temps avant la livraison de ma solution ?</span>
+                            <div class="accordion__icon"></div>
+                        </button>
+                        <div class="accordion__content">
+                            <p>Un prototype en 48h, puis une mise en place de la solution développée en moins de 10 jours en moyenne, selon la complexité du projet. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--cta">
+            <div class="container">
+                <div class="cta-banner reveal-up">
+                    <div class="cta-banner__glow"></div>
+                    <h2 class="cta-banner__title">Une tâche qui revient chaque semaine ?</h2>
+                    <p class="cta-banner__text">C'est probablement automatisable. Discutons-en, 20 à 30 minutes suffisent pour y voir clair.</p>
+                    <a href="#contact" class="btn btn--primary btn--lg">
+                        <span>Réserver un échange gratuit</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m0 0l-6-6m6 6l-6 6"/></svg>
+                    </a>
+                    <span class="cta-banner__note">20-30 min · Échange de cadrage · Réponse sous 48h</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--light" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info reveal-up">
+                        <span class="section__label">Parlons-en</span>
+                        <h2 class="section__title">Prêt à gagner<br><span class="text-accent">du temps ?</span></h2>
+                        <p class="contact-info__text">Remplissez le formulaire et nous vous recontactons sous 48h pour un premier échange gratuit de 20-30 minutes.</p>
+                        <div class="contact-info__cards">
+                            <div class="contact-info__card">
+                                <div class="contact-info__icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact-info__kicker">Email</span>
+                                    <a href="mailto:orionsystems.contact@gmail.com" class="contact-info__value">orionsystems.contact@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-info__card">
+                                <div class="contact-info__icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5.15 12.8 19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.89.68 2.79a2 2 0 0 1-.45 2.11L8.02 9.89a16 16 0 0 0 6.09 6.09l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.83.55 2.79.68A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact-info__kicker">Téléphone</span>
+                                    <a href="tel:+330651438248" class="contact-info__value">+33 06 51 43 82 48</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper reveal-up">
+                        <form class="form" id="contact-form" action="#" method="POST">
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label for="name" class="form__label">Nom</label>
+                                    <input type="text" id="name" name="name" class="form__input" required placeholder="Jean Dupont">
+                                </div>
+                                <div class="form__group">
+                                    <label for="email" class="form__label">Email</label>
+                                    <input type="email" id="email" name="email" class="form__input" required placeholder="jean@exemple.com">
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label for="entreprise" class="form__label">Nom de l'entreprise</label>
+                                    <input type="text" id="entreprise" name="entreprise" class="form__input" required placeholder="Nom de votre entreprise">
+                                </div>
+                                <div class="form__group">
+                                    <label for="phone" class="form__label">Téléphone <span class="form__optional">(optionnel)</span></label>
+                                    <input type="tel" id="phone" name="phone" class="form__input" placeholder="06 00 00 00 00">
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <label for="demande" class="form__label">Sujet de la demande</label>
+                                <select id="demande" name="demande" class="form__input form__select" required>
+                                    <option value="" disabled selected>Choisir un sujet</option>
+                                    <option value="projet">Démarrer un projet d'automatisation</option>
+                                    <option value="support">Demande de support technique</option>
+                                    <option value="partenariat">Partenariat</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="form__group">
+                                <label for="message" class="form__label">Message</label>
+                                <textarea id="message" name="message" class="form__input form__textarea" required placeholder="Décrivez brièvement ce qui vous prend du temps au quotidien..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--lg form__submit">
+                                <span>Envoyer le message</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="#accueil" class="footer__name">ORION<span>SYSTEMS</span></a>
+                    <p class="footer__tagline">Automatisations IA sur-mesure pour TPE/PME</p>
+                </div>
+                <div class="footer__nav">
+                    <a href="#approche">Notre approche</a>
+                    <a href="#comment">Fonctionnement</a>
+                    <a href="#exemples">Exemples</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Orion Systems. Tous droits réservés.</p>
+                <div class="footer__legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="form-modal" class="modal">
+        <div class="modal__backdrop"></div>
+        <div class="modal__card">
+            <div class="modal__brand">ORION<span>SYSTEMS</span></div>
+            <div class="modal__icon" id="modal-icon"></div>
+            <h3 class="modal__title" id="modal-title"></h3>
+            <p class="modal__text" id="modal-text"></p>
+            <button class="modal__btn" id="modal-close">Fermer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
