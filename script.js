@@ -261,7 +261,7 @@
     }
 
     // --- Contact form → Google Sheets + Gmail ---
-    var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxv-E8FTQVovsBU3I_5iggMHKqpY0xYyujs7bocVB3JQn_APMoW79csqBNDjW6N2lOv/exec';
+    var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx-I-WeQi1jm5atbx04Zooz-qz5llO3Kt7HZShu7tRh7vzRCnCU4qgPEVZwjtGLBAV8aQ/exec';
 
     var form = document.getElementById('contact-form');
     if (form) {
@@ -284,7 +284,8 @@
                 email: form.querySelector('[name="email"]').value,
                 phone: form.querySelector('[name="phone"]').value,
                 demande: form.querySelector('[name="demande"]').value,
-                message: form.querySelector('[name="message"]').value
+                message: form.querySelector('[name="message"]').value,
+                website: form.querySelector('[name="website"]').value
             };
 
             fetch(GOOGLE_SCRIPT_URL, {
