@@ -1589,3 +1589,8 @@ p, .lead, .hero__text { text-wrap: pretty; }
     .hero__orb, #particles, #particles * { animation: none !important; transform: none !important; }
     .reveal-up { opacity: 1 !important; transform: none !important; }
 }
+
+
+/* Aucun survol sur la section process « diagnostic » (.flow) : bordure figée */
+.flow__card:hover { border-color: rgba(255,255,255,0.07) !important; }
+.flow__step--lit .flow__card:hover { border-color: rgba(245,166,35,0.25) !important; }
