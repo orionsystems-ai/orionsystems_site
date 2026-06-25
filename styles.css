@@ -1544,3 +1544,48 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.1; letter-spacing:
     color: var(--text-body);
     line-height: 1.8;
 }
+
+
+/* ============================================================
+   PASSE DE POLISH — focus, etats, motion, equilibrage texte
+   (pas de hover sur la section process .flow / « diagnostic »)
+   ============================================================ */
+:root {
+    --shadow-sm: 0 2px 8px rgba(10,26,58,0.06);
+    --shadow-md: 0 8px 24px rgba(10,26,58,0.10);
+    --shadow-lg: 0 24px 60px rgba(10,26,58,0.16);
+}
+
+a:focus-visible, button:focus-visible, .btn:focus-visible, [tabindex]:focus-visible {
+    outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 8px;
+}
+.form__input:focus-visible, select.form__input:focus-visible, textarea.form__input:focus-visible {
+    outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px var(--gold-glow-strong);
+}
+
+.btn {
+    transition: transform .18s var(--ease-out), box-shadow .35s var(--ease),
+                background-color .35s var(--ease), color .35s var(--ease), border-color .35s var(--ease);
+}
+.btn:active { transform: translateY(1px) scale(0.985); }
+.btn--primary:hover, .btn--ghost:hover { transform: translateY(-2px); }
+.btn--ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+/* Survol des cartes : exemples + contact uniquement (PAS la section diagnostic) */
+.case { transition: transform .35s var(--ease), box-shadow .35s var(--ease); }
+.case:hover { box-shadow: 0 30px 70px rgba(10,26,58,0.20); }
+.contact-info__card { transition: transform .35s var(--ease), box-shadow .35s var(--ease); }
+.contact-info__card:hover { transform: translateY(-6px); box-shadow: 0 30px 70px rgba(10,26,58,0.16); }
+
+h1, h2, h3, .section__title, .hero__title { text-wrap: balance; }
+p, .lead, .hero__text { text-wrap: pretty; }
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important; animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    html { scroll-behavior: auto !important; }
+    .hero__orb, #particles, #particles * { animation: none !important; transform: none !important; }
+    .reveal-up { opacity: 1 !important; transform: none !important; }
+}
