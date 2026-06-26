@@ -1602,3 +1602,9 @@ p, .lead, .hero__text { text-wrap: pretty; }
     background-size: cover;
     background-position: center;
 }
+
+
+/* Quand la video joue : on retire l'image de fond (sinon elle transparait par-dessus) */
+.hero__bg.is-playing { background-image: none; }
+/* Video masquee par defaut -> aucun bouton pause iOS ; elle apparait en fondu quand elle joue */
+.hero__video { opacity: 0; transition: opacity .45s ease; }
