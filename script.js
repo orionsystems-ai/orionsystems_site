@@ -313,4 +313,21 @@
         });
     }
 
+
+    // --- Forcer la lecture de la video hero (iOS / mode eco energie) ---
+    var heroVideo = document.querySelector('.hero__video');
+    if (heroVideo) {
+        var tryPlay = function () {
+            var pr = heroVideo.play();
+            if (pr && pr.catch) { pr.catch(function () {}); }
+        };
+        tryPlay();
+        ['touchstart', 'click', 'scroll', 'keydown'].forEach(function (ev) {
+            window.addEventListener(ev, tryPlay, { once: true, passive: true });
+        });
+        document.addEventListener('visibilitychange', function () {
+            if (!document.hidden) { tryPlay(); }
+        });
+    }
+
 })();
