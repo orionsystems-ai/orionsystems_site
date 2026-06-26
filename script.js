@@ -314,14 +314,19 @@
     }
 
 
-    // --- Forcer la lecture de la video hero (iOS / mode eco energie) ---
+    // --- Video hero : forcer la lecture, et la masquer si impossible (iOS eco) ---
     var heroVideo = document.querySelector('.hero__video');
     if (heroVideo) {
+        var showV = function () { heroVideo.style.opacity = '0.3'; };
+        var hideV = function () { heroVideo.style.opacity = '0'; };
+        heroVideo.addEventListener('playing', showV);
         var tryPlay = function () {
             var pr = heroVideo.play();
-            if (pr && pr.catch) { pr.catch(function () {}); }
+            if (pr && pr.catch) { pr.catch(hideV); }
         };
         tryPlay();
+        // Si toujours en pause peu apres (mode eco iOS), on masque -> on voit l'image de fond, pas le bouton pause.
+        setTimeout(function () { if (heroVideo.paused) { hideV(); } }, 700);
         ['touchstart', 'click', 'scroll', 'keydown'].forEach(function (ev) {
             window.addEventListener(ev, tryPlay, { once: true, passive: true });
         });

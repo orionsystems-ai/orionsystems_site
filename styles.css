@@ -1594,3 +1594,11 @@ p, .lead, .hero__text { text-wrap: pretty; }
 /* Aucun survol sur la section process « diagnostic » (.flow) : bordure figée */
 .flow__card:hover { border-color: rgba(255,255,255,0.07) !important; }
 .flow__step--lit .flow__card:hover { border-color: rgba(245,166,35,0.25) !important; }
+
+
+/* Image de fond du hero (visible si la video ne joue pas, ex. iOS mode eco) */
+.hero__bg {
+    background-image: linear-gradient(rgba(10,26,58,0.5), rgba(10,26,58,0.5)), url('images/hero-poster.jpg');
+    background-size: cover;
+    background-position: center;
+}
